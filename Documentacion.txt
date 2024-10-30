@@ -1,0 +1,7 @@
+Para trabajar en el codigo se ha decidido usar una metodologia BEM, para poder reaprovechar al máximo cada linea de codigo y no tener una hoja de estilos llena de 
+clases que solo se usan una vez.
+
+Por otro lado tambien se seguira el orden de declaración propuesto en "https://codeguide.co/#declaration-order", haciendo tambien más limpio el codigo en si.
+
+Esto ha sido configurado en la hoja de .stylelintrc en las reglas y extends. Tambien se ha añadido una regla para no tener bloques vacíos para tambien mantener el codigo limpio 
+de elementos innecesarios.

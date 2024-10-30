@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -15,12 +20,49 @@ body {
   color: $uoc-corporate;
 }
 
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow:1;
+  justify-content: space-between;
+  align-items: center; //Alineació vertical de la caixa flex
+  text-align: left; //Posicio text
+}
+.flex-columnas-gap1{
+  column-gap:3rem;
+}
+.flex-columnas-gap2{
+  column-gap:1rem;
+}
+.flex-columnas-horizontal{
+  justify-content: left; //Alineació horitzontal de la caixa flex
+}
+
+.grid{
+  @media (min-width: $mqMinWidth) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 1rem;
+  }
+}
+
+.image-width{
+  max-width: 100%;
+  @media (min-width: $mqMinWidth) {
+    max-width: 300px;
+  }
+}
+
+.margintop{
+  margin-top: 3rem;
+}
+
 .uoc-container {
   max-width: 800px;
   margin: auto;
   padding: 2rem;
   border-radius: 2rem;
-  text-align: center;
+  text-align: left;
   background-color: #fff;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -39,14 +81,25 @@ body {
   }
 }
 
-.uoc-title {
+.title {
   font-family: $font-family-serif;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 900;
   color: $uoc-corporate;
 
   @media (min-width: $mqMinWidth) {
     font-size: 36px;
+  }
+}
+
+.title-secundari {
+  font-family: $font-family-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: $uoc-corporate;
+
+  @media (min-width: $mqMinWidth) {
+    font-size: 30px;
   }
 }
 
